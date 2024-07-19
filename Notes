@@ -1,0 +1,3 @@
+- to avoid null values in the db we use sql.nullstring
+- the html/template package is so big, i need a whole study sessions for it if i want to master it n expand my knowledge about SSR
+- i'v finished dynamic template html i would say is the only thing i need to sharpen myself a lot on it

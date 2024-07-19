@@ -1,0 +1,20 @@
+q: dynamic html templates ... do we really need it when we use something like react in the frontend?
+a: this is an architecture question
+    SSR (server -side rendered) using Golang, you're gonna need those templates
+q: why exactly this date? {{ 02 Jan 2006 at 15:04 }} even copilot suggests to me
+   func humanDate(t time.Time) string {
+   	return t.Format("02 Jan 2006 at 15:04")
+   }
+chatgpt answer:
+{{ The date format string "02 Jan 2006 at 15:04" in Go is a common source of confusion for new Go developers. This specific date and time, 02 Jan 2006 15:04, is used as the reference or "magic" date because it includes components for day, month, year, hour, and minute in a sequence that makes it easier to remember. Each component represents a specific format:
+
+02 represents the day of the month.
+Jan represents the abbreviated month name.
+2006 represents the full year.
+15 represents the hour in 24-hour format.
+04 represents the minute.
+In Go, you format dates using this specific date and time because it includes all the components you might need in a format string, allowing you to easily remember and customize the output format. For example:
+
+t.Format("02 Jan 2006") would format the date as 02 Jan 2024.
+t.Format("15:04") would format the time as 15:04.
+By using this reference date, you can mix and match components to create the specific date and time format you need for your application }}

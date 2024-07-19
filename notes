@@ -1,1 +1,0 @@
-to avoid null values in the db we use sql.nullstring
