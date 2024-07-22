@@ -1,3 +1,8 @@
 - to avoid null values in the db we use sql.nullstring
 - the html/template package is so big, i need a whole study sessions for it if i want to master it n expand my knowledge about SSR
 - i'v finished dynamic template html i would say is the only thing i need to sharpen myself a lot on it
+- Note: When we check the length of the title field, we’re using the
+  utf8.RuneCountInString() function — not Go’s len() function. This will count the
+  number of Unicode code points in the title rather than the number of bytes. To
+  illustrate the difference, the string "Zoë" contains 3 Unicode code points, but 4 bytes
+  because of the umlauted ë character.

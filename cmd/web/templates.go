@@ -12,6 +12,7 @@ type templateData struct {
 	CurrentYear int
 	Snippet     models.Snippet
 	Snippets    []models.Snippet
+	Form        any
 }
 
 // why exactly this date? {{ 02 Jan 2006 at 15:04 }} even copilot suggests to me
