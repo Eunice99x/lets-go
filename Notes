@@ -13,3 +13,8 @@ Note: If you’re not familiar with the term, TLS is essentially the modern vers
 concerns, but the name still lives on in the public consciousness and is often used
 interoperably with TLS. For clarity and accuracy, we’ll stick with the term TLS
 throughout this book.
+- CSRF protection cross-site request forgery (CSRF attacks)
+    If you’re not familiar with the principles of CSRF, it’s a type of attack where a malicious
+    third-party website sends state-changing HTTP requests to your website. A great
+    explanation of the basic CSRF attack can be found here.
+    https://www.gnucitizen.org/blog/csrf-demystified/

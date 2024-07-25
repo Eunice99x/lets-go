@@ -14,5 +14,6 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/go-playground/form v3.1.4+incompatible // indirect
+	github.com/justinas/nosurf v1.1.1 // indirect
 	golang.org/x/crypto v0.25.0 // indirect
 )
