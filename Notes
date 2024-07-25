@@ -6,3 +6,10 @@
   number of Unicode code points in the title rather than the number of bytes. To
   illustrate the difference, the string "Zoë" contains 3 Unicode code points, but 4 bytes
   because of the umlauted ë character.
+
+- TLS (Transport Layer Security)
+Note: If you’re not familiar with the term, TLS is essentially the modern version of SSL
+(Secure Sockets Layer). SSL now has been officially deprecated due to security
+concerns, but the name still lives on in the public consciousness and is often used
+interoperably with TLS. For clarity and accuracy, we’ll stick with the term TLS
+throughout this book.

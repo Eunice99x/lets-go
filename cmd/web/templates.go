@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/eunice99x/lets-go/internal/models"
 	"html/template"
-	"net/http"
 	"path/filepath"
 	"time"
 )
@@ -13,6 +12,7 @@ type templateData struct {
 	Snippet     models.Snippet
 	Snippets    []models.Snippet
 	Form        any
+	Flash       string
 }
 
 // why exactly this date? {{ 02 Jan 2006 at 15:04 }} even copilot suggests to me
@@ -51,10 +51,4 @@ func newTemplateCache() (map[string]*template.Template, error) {
 		cache[name] = ts
 	}
 	return cache, nil
-}
-
-func (app *application) newTemplateData(r *http.Request) templateData {
-	return templateData{
-		CurrentYear: time.Now().Year(),
-	}
 }
